@@ -2,6 +2,7 @@ package com.kzk.scsrc.algorithm.controller;
 
 /**
  * Created by kangk_000 on 3/18/2017.
+ * Description: 操作Spark平台的controller
  */
 
 import java.awt.*;
@@ -25,8 +26,13 @@ import javax.servlet.http.HttpServletResponse;
 @RequestMapping(value = "/spark")
 public class SparkController {
 
+/**
+*@Param:接受console打印出的迭代次数（iteration）
+**/
     private IterUtil iu = new IterUtil();
-
+/**
+*@Description:在这个方法里面执行shell命令
+**/
     @RequestMapping(value = "/sparkShow")
     public
     @ResponseBody
@@ -45,6 +51,9 @@ public class SparkController {
         return scsrcMap;
     }
 
+/**
+*@Description:方法响应前端kzk.js中定时器对迭代次数的请求
+**/    
     @RequestMapping(value = "/getIteration", method = RequestMethod.GET)
     public
     @ResponseBody
