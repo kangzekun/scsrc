@@ -18,12 +18,17 @@
 <link rel="stylesheet" type="text/css" href="tools/select/css/nice-select.css">
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    <%--<section class="content-header">--%>
+    <section class="content-header">
+            <h1>
+            海量高光谱图像分类云系统
+            <small>算法执行模块</small>
+            <small>分类结果显示模块</small>
+        </h1>
     <%--<h1>--%>
     <%--Dashboard--%>
     <%--<small>Control panel</small>--%>
     <%--</h1>--%>
-    <%--</section>--%>
+    </section>
     <!-- Main content -->
     <div class="htmleaf-container">
         <div class="container">
