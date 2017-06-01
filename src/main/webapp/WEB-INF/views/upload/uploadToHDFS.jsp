@@ -8,16 +8,16 @@
     <script  type="text/javascript" src="tools/upload/js/fileinput.js"></script>
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    <%--<section class="content-header">--%>
-        <%--<h1>--%>
-            <%--Dashboard--%>
-            <%--<small>Control panel</small>--%>
-        <%--</h1>--%>
+    <section class="content-header">
+            <h1>
+            海量高光谱图像分类系统
+            <small>图像入库模块</small>
+        </h1>
         <%--<ol class="breadcrumb">--%>
             <%--<li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>--%>
             <%--<li class="active">Dashboard</li>--%>
         <%--</ol>--%>
-    <%--</section>--%>
+    </section>
     <!-- Main content -->
     <!-- 上传插件-->
 
