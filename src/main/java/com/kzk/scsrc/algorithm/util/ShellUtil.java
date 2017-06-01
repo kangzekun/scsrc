@@ -17,7 +17,7 @@ public class ShellUtil {
 
 		String[] args = new String[]{
 				"--class","SCSRC.examples.SCSRC_feature2",
-    		"--master","spark://10.10.10.47:7077",
+    		"--master","spark://10.10.10.46:7077",
     		"--driver-memory","3g",
     		"--executor-memory","4g",
     		"--conf","spark.akka.frameSize=100",
