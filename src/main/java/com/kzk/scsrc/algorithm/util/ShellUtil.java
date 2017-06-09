@@ -21,8 +21,8 @@ public class ShellUtil {
     		"--driver-memory","3g",
     		"--executor-memory","4g",
     		"--conf","spark.akka.frameSize=100",
-    		"/home/chenyf/shenjl/SCSRC_V1.jar",
-    		"/home/chenyf/shenjl/",
+    		"/home/hadoop/shen/SCSRC_V1.jar",
+    		"/home/hadoop/shen/",
     	 };
     	 int partitions=16;
     	 int iterations=40;
@@ -40,28 +40,28 @@ public class ShellUtil {
 		try {
              Process process = Runtime.getRuntime().exec(shell);
 			 //normal
-			 InputStreamReader isr = new InputStreamReader(process.getInputStream());
-			 BufferedReader br = new BufferedReader(isr);
+//			 InputStreamReader isr = new InputStreamReader(process.getInputStream());
+//			 BufferedReader br = new BufferedReader(isr);
 			 //error
-			 InputStreamReader isr1 = new InputStreamReader(process.getErrorStream());
-			 BufferedReader br1 = new BufferedReader(isr1);
-			 String errline;
-			 String lineConsole = null;
+//			 InputStreamReader isr1 = new InputStreamReader(process.getErrorStream());
+//			 BufferedReader br1 = new BufferedReader(isr1);
+//			 String errline;
+//			 String lineConsole = null;
 			 //readLine只能读取连续的文件，不能判断是不是空行
 			 //所以必须得加上一句代码让整个逻辑更加清楚
-			 while ((lineConsole = br.readLine()) != null) {
-				 if (lineConsole.isEmpty()) continue;
-				 System.out.println(lineConsole);
-				 extr.readProcessBuf(lineConsole);
-				 iu.setIteration(extr.getIteration());
-			 }
+//			 while ((lineConsole = br.readLine()) != null) {
+//				 if (lineConsole.isEmpty()) continue;
+//				 System.out.println(lineConsole);
+//				 extr.readProcessBuf(lineConsole);
+//				 iu.setIteration(extr.getIteration());
+//			 }
 			 //get scsrcMap
 
-			 while ((errline = br1.readLine()) != null) {
-				 if (errline.indexOf("Exception") != -1) {
-					 result = "error";
-                 }
-             }
+//			 while ((errline = br1.readLine()) != null) {
+//				 if (errline.indexOf("Exception") != -1) {
+//					 result = "error";
+//                 }
+//             }
              process.waitFor();
          } catch (Exception e) {
              e.printStackTrace();
